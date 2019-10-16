@@ -4,7 +4,7 @@ cache:
   - directories:
     - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 rvm:
-- 2.5.4
+- 2.5.3
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
@@ -15,11 +15,6 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 sudo: false # route your build to the container-based infrastructure for a faster build
-
-branches:
-  only:
-    - gh-pages
-    - /.*/
 
 # Add slack notifications
 notifications:
