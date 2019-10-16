@@ -1,5 +1,18 @@
+version: 1.0.{build}-{branch}
+
+cache:
+  - vendor/bundle
+
+environment:
+  matrix:
+    - RUBY_VERSION: 22
+    - RUBY_VERSION: 21
+    - RUBY_VERSION: 200
+    - RUBY_VERSION: 193
+
 install:
-  - set PATH=C:\Ruby25\bin;%PATH%
+  - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
+  - bundle config --local path vendor/bundle
   - bundle install
 
 build: off
@@ -8,7 +21,6 @@ before_test:
   - ruby -v
   - gem -v
   - bundle -v
-  - gem install bundler
 
 test_script:
-  - bundle exec rake hello
+  - bundle exec rake
