@@ -61,7 +61,8 @@ exclude:
   - yarn.lock
   - README.md
   - webpack.config.js
-  - appveyor.yml
+  - .travis.yml
+  - vendor
 
 include:
   - _pages
