@@ -4,7 +4,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/h12tdfowqiwl7mrf?svg=true)](https://ci.appveyor.com/project/stphn/jekyllplate)
 [![Build Status](https://travis-ci.org/stphn/jekyllplate.svg?branch=master)](https://travis-ci.org/stphn/jekyllplate)
 
-Not just another starter kit for static Jekyll sites
+Not just another starter-kit for static Jekyll sites
 
 This boilerplate includes common useful gulp tasks, auto-reload with BrowserSync and ES6 modules from webpack.
 
