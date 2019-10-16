@@ -61,6 +61,7 @@ exclude:
   - yarn.lock
   - README.md
   - webpack.config.js
+  - appveyor.yml
 
 include:
   - _pages
