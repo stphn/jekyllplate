@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="row center-on-medium">
+	<div class="column medium-8 large-6">
+
+		<article>
+
+			<header>
+				<p><time datetime="{{ page.date|date: '%Y-%m-%d' }}">{{ page.date|date: "%B %-d, %Y" }}</time></p>
+				<h1 class="h1">{{ page.headline }}</h1>
+			</header>
+
+			<div>
+				<p>{{ page.excerpt }}</p>
+			</div>
+
+
+			<div>
+				{{ content }}
+			</div>
+
+		</article>
+
+	</div>
+</div>

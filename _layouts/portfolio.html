@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="row center-on-medium">
+	<div class="column medium-10 large-8">
+
+		<article>
+
+			<header>
+
+				{% if page.project_url and page.project_website %}
+					<a href="{{ page.project_url }}">{{ page.project_website }}</a>
+				{% endif %}
+
+				<h1 class="h1">{{ page.title }}</h1>
+
+			</header>
+
+			<div>
+				{{ page.headline }}
+			</div>
+
+			<figure class="figure">
+				<img src="{{ page.project_image_small | prepend:'/assets/img/projects/' }}" srcset="
+					{{ page.project_image_large | prepend:'/assets/img/projects/' }} 1500w,
+					{{ page.project_image_medium | prepend:'/assets/img/projects/' }} 1024w,
+					{{ page.project_image_small | prepend:'/assets/img/projects/' }} 600w" sizes="100vw" alt="{{ page.title }}">
+			</figure>
+
+			<div>
+				{{ content }}
+			</div>
+
+		</article>
+
+	</div>
+</div>

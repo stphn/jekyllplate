@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Blog"
+meta_description: "Default Blog Meta Description"
+permalink: blog/index.html
+current_nav: blog
+---
+
+<div class="row">
+	<div class="column medium-9">
+		{% assign postsByYear = site.posts | group_by_exp: "item", "item.date | date:'%Y'" %}
+		{% for year in postsByYear %}
+
+			{% if forloop.first %}
+				<div>
+			{% endif %}
+
+					<div>
+						<h2 class="h2">{{ year.name }}</h2>
+
+						{% for blogpost in year.items %}
+
+							{% if forloop.first %}
+								<div>
+							{% endif %}
+
+									<div>
+										<article>
+											<p><time
+													datetime="{{ blogpost.date | date: '%Y-%m-%d' }}">{{ blogpost.date | date: "%B %-d, %Y" }}</time>
+											</p>
+											<h3 class="h4"><a href="{{ blogpost.url }}">{{ blogpost.title }}</a></h3>
+											<p>{{ blogpost.excerpt }}</p>
+											<p><a href="{{ blogpost.url }}" title="{{ blogpost.title }}">Read More</a></p>
+										</article>
+									</div>
+
+							{% if forloop.last %}
+								</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+
+			{% if forloop.last %}
+				</div>
+			{% endif %}
+
+		{% endfor %}
+
+	</div>
+
+	<div class="column medium-3">
+		<aside>
+			<div>
+				<h2 class="h2">RSS Feed</h2>
+				<div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cum, beatae dignissimos voluptate,
+						labore accusamus libero eligendi odio aperiam neque nulla deleniti praesentium!</p>
+					<p><a href="/feed.xml">Blogposts feed</a></p>
+				</div>
+			</div>
+		</aside>
+	</div>
+
+</div>
