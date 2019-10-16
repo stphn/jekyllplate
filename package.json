@@ -1,7 +1,7 @@
 {
   "name": "jekyllplate",
   "description": "Starter kit for static Jekyll sites using gulp automations.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Stéphane Goeuriot",
   "license": "MIT",
   "repository": {
