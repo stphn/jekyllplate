@@ -62,7 +62,7 @@ exclude:
   - README.md
   - webpack.config.js
   - .travis.yml
-  - [vendor]
+  - vendor
 
 include:
   - _pages
