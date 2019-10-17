@@ -1,7 +1,7 @@
 # Jekyllplate
 
 [![Dependencies](https://david-dm.org/stphn/Jekyllplate.svg)](https://david-dm.org/stphn/Jekyllplate#info=dependencies)
-[![Build Status](https://travis-ci.org/stphn/jekyllplate.svg?branch=master)](https://travis-ci.org/stphn/jekyllplate)
+[![Build Status](https://travis-ci.org/stphn/jekyllplate.svg?branch=master)](https://travis-ci.org/stphn/jekyllplate) [![Greenkeeper badge](https://badges.greenkeeper.io/stphn/jekyllplate.svg)](https://greenkeeper.io/)
 
 Not just another starter-kit for static Jekyll sites
 
