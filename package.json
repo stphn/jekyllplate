@@ -15,7 +15,7 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "@babel/core": "^7.1.6",
+    "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.1.6",
     "autoprefixer": "^9.3.1",
     "babel-loader": "^8.0.4",
